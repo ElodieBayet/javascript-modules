@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr" class="nojs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minuteur de questions | JavaScript Modules</title>
+    <!-- Styles -->
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/base.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/components.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/theme.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- Identity and parameters -->
+        <meta name="description" content="Exemple de développement modulaire en JavaScript : Minuteur">
+        <meta name="author" content="Elodie Bayet, www.elodiebayet.com">
+        <meta name="copyright" content="Elodie Bayet © 2025">
+        <meta name="theme-color" content="#a01400">
+        <link href="https://www.elodiebayet.com/shared/trademark/elodie_bayet_side_favicon.png" rel="icon" type="image/png">
+	<!-- Scripts -->
+        <script type="module" src="./assets/js/quiztimer.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="headline">
+				<a href="./" class="button">Retourner à l'accueil</a>
+				<h1>Minuteur de questions</h1>
+				<p class="m-dark"><small>&mdash; version 2.0 &mdash;</small></p>
+				<p>Support de cours sur la programmation en JavaScript</p>
+				<a href="https://github.com/ElodieBayet/javascript-modules" class="button icon"><span class="github">&nbsp;</span>Voir le projet sur GitHub</a>
+			</div>
+			<noscript><strong>Le JavaScript est désactivé</strong>. L'application ne peut pas fonctionner.</noscript>
+		</header>
+		<main>
+			<section>
+				<h2>Utilisation</h2>
+				<p>Entrez le nombre de questions et le nombre de secondes octroyé par question.</p>
+				<div id="command">
+					<h4>Formulaire de paramétrage du timer</h4>
+					<form action="#" method="GET" name="setTime">
+						<div class="inline">
+							<label for="iptQuestions">Nombre de questions</label>
+							<input type="number" min="1" max="100" step="1" name="question" id="iptQuestions" placeholder="99" required>
+						</div>
+						<div class="inline">
+							<label for="iptSeconds">Nombre de secondes</label>
+							<input type="number" min="1" max="60" step="1" name="second" id="iptSeconds" placeholder="30" required>
+						</div>
+						<div class="flex">
+							<input type="button" value="Lancer" name="start" data-action="start" disabled>
+							<input type="button" value="Recommencer" name="resume" disabled>
+							<input type="button" value="Effacer" name="reset" disabled>
+						</div>
+					</form>
+				</div>
+				<hr>
+				<div id="output">
+					<h4>Chronomètre</h4>
+					<div class="chrono">
+						<p><span id="minutes">00</span>:<span id="seconds">00</span></p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="headline">
+				<a href="./" class="applogo" title="Retourner à l'accueil du site">
+					<span class="title">JavaScript Modules</span>
+				</a>
+				<p>Exemple de développement modulaire en JavaScript</p>
+			</div>
+			<div id="author">
+                <p>
+                    <span>JS &amp; Modules &copy; 2019-2025 &mdash; Tous droits réservés &mdash; v.2.0 &mdash;</span>
+                    <a href="https://www.elodiebayet.com" title="Voir le site" target="_blank" rel="noopener">
+                        Développé par Elodie Bayet&nbsp;
+                        <img src="https://www.elodiebayet.com/shared/trademark/elodie_bayet_icon_wt.svg" alt="">
+                    </a>
+                </p>
+            </div>
+		</footer>
+	</body>
+</html>

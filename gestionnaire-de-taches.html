@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr" class="nojs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestionnaire de tâches | JavaScript Modules</title>
+    <!-- Styles -->
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/base.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/components.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/theme.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- Identity and parameters -->
+        <meta name="description" content="Exemple de développement modulaire en JavaScript : Gestionnaire de tâches">
+        <meta name="author" content="Elodie Bayet, www.elodiebayet.com">
+        <meta name="copyright" content="Elodie Bayet © 2025">
+        <meta name="theme-color" content="#a01400">
+        <link href="https://www.elodiebayet.com/shared/trademark/elodie_bayet_side_favicon.png" rel="icon" type="image/png">
+	<!-- Scripts -->
+        <script type="module" src="./assets/js/tasksmanager.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="headline">
+				<a href="./" class="button">Retourner à l'accueil</a>
+				<h1>Gestionnaire de tâches</h1>
+				<p class="m-dark"><small>&mdash; version 2.0 &mdash;</small></p>
+				<p>Support de cours sur la programmation en JavaScript</p>
+				<a href="https://github.com/ElodieBayet/javascript-modules" class="button icon"><span class="github">&nbsp;</span>Voir le projet sur GitHub</a>
+			</div>
+			<noscript><strong>Le JavaScript est désactivé</strong>. L'application ne peut pas fonctionner.</noscript>
+		</header>
+		<main>
+			<section>
+				<h2>Utilisation</h2>
+				<p>Ajoutez des tâches via le formulaire de saisie. Complétez, editez ou supprimez des tâches dans la liste de résultats.</p>
+				<div class="flex">
+					<div id="command" class="col-50">
+						<h3>Formulaire d'ajout</h3>
+						<form action="#" method="GET" name="addTask">
+							<div>
+								<label for="iptTask">Ajouter une tâche à la liste</label>
+								<input type="text" maxlength="255" name="task" id="iptTask" placeholder="Intitulé de tâche">
+							</div>
+							<div>
+								<input type="submit" value="Ajouter" name="add" disabled>
+							</div>
+						</form>
+					</div>
+					<div id="output" class="col-50">
+						<h3>Tâches à faire</h3>
+						<ul id="tasksList" class="tasks"></ul>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="headline">
+				<a href="./" class="applogo" title="Retourner à l'accueil du site">
+					<span class="title">JavaScript Modules</span>
+				</a>
+				<p>Exemple de développement modulaire en JavaScript</p>
+			</div>
+			<div id="author">
+                <p>
+                    <span>JS &amp; Modules &copy; 2019-2025 &mdash; Tous droits réservés &mdash; v.2.0 &mdash;</span>
+                    <a href="https://www.elodiebayet.com" title="Voir le site" target="_blank" rel="noopener">
+                        Développé par Elodie Bayet&nbsp;
+                        <img src="https://www.elodiebayet.com/shared/trademark/elodie_bayet_icon_wt.svg" alt="">
+                    </a>
+                </p>
+            </div>
+		</footer>
+	</body>
+</html>

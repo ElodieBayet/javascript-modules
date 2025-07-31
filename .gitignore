@@ -1,0 +1,13 @@
+# Folders
+.vscode/
+_notes/
+
+# Files
+Thumbs.db
+*.log
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv

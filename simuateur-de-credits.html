@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr" class="nojs">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulateur de crédits | JavaScript Modules</title>
+    <!-- Styles -->
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/base.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/components.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="https://demo.elodiebayet.com/pluto/assets/css/theme.css" rel="stylesheet" type="text/css" media="screen">
+    <!-- Identity and parameters -->
+        <meta name="description" content="Exemple de développement modulaire en JavaScript : Simulateur">
+        <meta name="author" content="Elodie Bayet, www.elodiebayet.com">
+        <meta name="copyright" content="Elodie Bayet © 2025">
+        <meta name="theme-color" content="#a01400">
+        <link href="https://www.elodiebayet.com/shared/trademark/elodie_bayet_side_favicon.png" rel="icon" type="image/png">
+	<!-- Scripts -->
+        <script type="module" src="./assets/js/creditssimulator.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="headline">
+				<a href="./" class="button">Retourner à l'accueil</a>
+				<h1>Simulateur de crédits</h1>
+				<p class="m-dark"><small>&mdash; version 2.0 &mdash;</small></p>
+				<p>Support de cours sur la programmation en JavaScript</p>
+				<a href="https://github.com/ElodieBayet/javascript-modules" class="button icon"><span class="github">&nbsp;</span>Voir le projet sur GitHub</a>
+			</div>
+			<noscript><strong>Le JavaScript est désactivé</strong>. L'application ne peut pas fonctionner.</noscript>
+		</header>
+		<main>
+			<section>
+				<h2>Utilisation</h2>
+				<p>Saisisez les valeurs adéquates pour obtenir la simulation d'un crédit.</p>
+				<div class="flex">
+					<div id="commands" class="col-50">
+						<h3>Formulaire de configuration</h3>
+						<form action="#" method="GET" name="configCredit">
+							<div>
+								<label for="type">Types de prêt</label>
+								<select id="type" name="type">
+									<option value="none">Aucun type</option>
+								</select>
+							</div>
+							<div>
+								<label for="amount">Montant du prêt</label>
+								<input type="number" id="amount" name="amount" placeholder="1234">
+								<span>&nbsp;</span>
+							</div>
+							<fieldset>
+								<legend>Durée du prêt</legend>
+								<div id="durations" class="flex">
+									<p class="col nothing">Aucune plage disponible</p>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div id="output" class="col-50">
+						<h3>Résultats</h3>
+						<div id="summary">
+							<h5 data-name="title">Type de crédit</h5>
+							<p>Montant&nbsp;: <strong data-name="amount">-</strong></p>
+							<p>Durée&nbsp;: <strong data-name="duration">-</strong></p>
+							<p>TAEG&nbsp;: <strong data-name="rate">-</strong></p>
+							<p>Mensualité&nbsp;: <strong data-name="pay">-</strong></p>
+							<p>Total&nbsp;: <strong data-name="total">-</strong></p>
+						</div>
+					</div>
+			</section>
+		</main>
+		<footer>
+			<div class="headline">
+				<a href="./" class="applogo" title="Retourner à l'accueil du site">
+					<span class="title">JavaScript Modules</span>
+				</a>
+				<p>Exemple de développement modulaire en JavaScript</p>
+			</div>
+			<div id="author">
+                <p>
+                    <span>JS &amp; Modules &copy; 2019-2025 &mdash; Tous droits réservés &mdash; v.2.0 &mdash;</span>
+                    <a href="https://www.elodiebayet.com" title="Voir le site" target="_blank" rel="noopener">
+                        Développé par Elodie Bayet&nbsp;
+                        <img src="https://www.elodiebayet.com/shared/trademark/elodie_bayet_icon_wt.svg" alt="">
+                    </a>
+                </p>
+            </div>
+		</footer>
+	</body>
+</html>

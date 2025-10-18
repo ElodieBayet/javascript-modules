@@ -1,8 +1,8 @@
 # **JavaScript & Modules**
 
-Version | Objectif | Cadre | Démo
-------- | -------- | ----- | ----
-2.0 | Andragogie | Labo JavaScript | [JavaScript & Modules](https://demo.elodiebayet.com/javascript-modules)
+Version | Objectif | Domaine | Cadre | Démo
+------- | -------- | ------- | ----- | ----
+2.0 | Andragogie | Programmation | Laboratoire | [JavaScript & Modules](https://demo.elodiebayet.com/javascript-modules)
 
 
 ---
@@ -18,7 +18,7 @@ Ce projet est un support de cours qui sert d'exemple de développement en JavaSc
 - Découper les fichier d'une application en Modèle-Vue-Controleur
 - Exploiter la technique d'import et d'export de fichiers JavaScript
 - Se préparer à l'utilisation du TypeScript
-- Se préparer à l'apprentissage d'un Framework professionnel comme Vue.js
+- Se préparer à l'apprentissage d'un Framework professionnel comme Angular
 
 
 ### Exploitation
